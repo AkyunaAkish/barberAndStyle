@@ -1,9 +1,5 @@
 app.controller('MainController', function($scope, $http){
 
-  $http.get('/api/v1/test').then(function(res){
-    $scope.message = res.data;
-  });
-
   $scope.sendEmail = function() {
     var messageObj = {};
     messageObj.senderEmail = $scope.emailAddress;
