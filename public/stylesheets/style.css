@@ -1,0 +1,85 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+img, embed, object, video {
+  max-width: 100%;
+  height: auto; }
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif !important; }
+
+.social_anchor {
+  display: block; }
+  .social_anchor:visited {
+    color: #417db4; }
+
+.facebook {
+  font-size: 2em; }
+  .facebook button {
+    border: none;
+    background: none;
+    color: #525fa7; }
+
+.twitter {
+  font-size: 2em; }
+  .twitter button {
+    border: none;
+    background: none;
+    color: #6faaf3; }
+
+#map {
+  height: 50vh;
+  margin: 30px; }
+
+.jumbotron {
+  height: 35vh; }
+
+.jumbotron h1 {
+  background-color: black;
+  color: white; }
+
+.contactP {
+  font-size: 1.2em; }
+
+.hoursP {
+  font-size: 2em; }
+
+.anchorLinkMap button {
+  margin-bottom: 20px; }
+
+.mainFooter {
+  overflow: hidden; }
+
+.caption {
+  background: #222222;
+  border-radius: 1%; }
+  .caption p {
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: white; }
+  .caption h3 {
+    color: white; }
+  .caption .mainH3 {
+    font-size: 2em;
+    font-weight: bolder; }
+
+.directionsH3 {
+  font-size: 3em; }
+
+.footerP {
+  font-size: 2em;
+  font-weight: bolder; }
+
+.homeColumn {
+  background: #222222;
+  color: white; }
+  .homeColumn .homeH1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bolder; }
+
+.phoneB {
+  font-size: 1.7em; }
+
+.hero-feature .homeP {
+  font-size: 1.4em; }

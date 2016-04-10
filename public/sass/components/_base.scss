@@ -1,0 +1,120 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+img, embed, object, video {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif !important;
+}
+
+.social_anchor {
+  display: block;
+
+  &:visited {
+    color: rgb(65,125,180);
+  }
+
+}
+
+.facebook {
+  button {
+    border: none;
+    background: none;
+    color: rgb(82,95,167);
+  }
+  font-size: 2em;
+}
+
+.twitter {
+  button {
+    border: none;
+    background: none;
+    color: rgb(111,170,243);
+  }
+  font-size: 2em;
+}
+
+#map {
+  height: 50vh;
+  margin: 30px;
+}
+
+.jumbotron {
+  height: 35vh;
+
+}
+
+.jumbotron h1 {
+  background-color: black;
+  color: white;
+}
+
+.contactP {
+  font-size: 1.2em;
+}
+
+.hoursP {
+  font-size: 2em;
+}
+
+.anchorLinkMap {
+  button {
+    margin-bottom: 20px;
+  }
+}
+
+.mainFooter {
+  overflow: hidden;
+}
+
+.caption {
+  background: rgb(34,34,34);
+  border-radius: 1%;
+  p {
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: white;
+  }
+
+  h3 {
+    color: white;
+  }
+
+  .mainH3 {
+    font-size: 2em;
+    font-weight: bolder;
+  }
+}
+
+.directionsH3 {
+  font-size: 3em;
+}
+
+.footerP {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.homeColumn {
+  background: rgb(34,34,34);
+  color: white;
+  .homeH1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bolder;
+  }
+}
+
+.phoneB {
+  font-size: 1.7em;
+}
+
+.hero-feature {
+  .homeP {
+    font-size: 1.4em;
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="legacyBarberAndStyle">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Legacy Barber and Style Inc. is a barber shop in Las Vegas that specializes in flat tops, razor cuts, fades, shaves and more. Let our barbers give you a complete style that will compliment you. We are locally owned and operated in Las Vegas and we look forward to serving you. Call Legacy Barber and Style Inc. today to schedule an appointment. 702-262-6466">
+  <script src="/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css">
+
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="/bower_components/angular/angular.min.js" charset="utf-8"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
+
+  <link href="/templateBootstrap/css/heroic-features.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <script src="/javascripts/module.js" charset="utf-8"></script>
+  <script src="/javascripts/controllers/mainController.js" charset="utf-8"></script>
+  <script src="/javascripts/routes.js" charset="utf-8"></script>
+
+  <title>Legacy Barber and Style</title>
+  <base href="/">
+
+</head>
+
+<body ng-cloak>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" ui-sref="initial">Legacy Barber and Style</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>
+            <a ui-sref="about">About Us</a>
+          </li>
+          <li>
+            <a ui-sref="services">Services</a>
+          </li>
+          <li>
+            <a ui-sref="contact">Contact</a>
+          </li>
+          <li>
+            <a ui-sref="hours">Hours</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div ui-view></div>
+
+  <!-- Footer -->
+  <footer class="mainFooter">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+        <p class="footerP">legacybarberandstyle.com  &copy; 2016 - 2017</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
