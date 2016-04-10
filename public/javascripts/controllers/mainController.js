@@ -12,7 +12,7 @@ app.controller('MainController', function($scope, $http){
     messageObj.emailMessage = $scope.emailMessage;
 
     $http.post('/api/v1/send_email', messageObj).then(function(res){
-      alert(res.data);
+      console.log(res.data);
     });
 
   };
