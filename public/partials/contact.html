@@ -27,13 +27,16 @@
             <label class="contactH">Your email address:</label>
             <input class="emailInput" type="email" ng-model="emailAddress" placeholder="Your email address" required>
 
+            <label class="contactH">Your name:</label>
+            <input class="emailInput" type="text" ng-model="senderName" placeholder="Your name" required>
+
             <label class="contactH">Message subject:</label>
             <input class="emailInput" type="text" ng-model="emailSubject" placeholder="Email subject" required>
 
             <label class="contactH">Message:</label>
             <textarea rows="8" cols="40" ng-model="emailMessage" placeholder="Message" required></textarea>
 
-            <button class="emailButton btn btn-primary" ng-disabled="form.$invalid" ng-click="">Submit Message</button>
+            <button class="emailButton btn btn-primary" ng-disabled="form.$invalid" ng-click="sendEmail()">Submit Message</button>
 
           </form>
 
