@@ -8,19 +8,9 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     templateUrl: "partials/home.html",
     controller: "MainController"
   })
-  .state('about', {
-    url: "/about",
-    templateUrl: "partials/about.html",
-    controller: "MainController"
-  })
   .state('contact', {
     url: "/contact",
     templateUrl: "partials/contact.html",
-    controller: "MainController"
-  })
-  .state('services', {
-    url: "/services",
-    templateUrl: "partials/services.html",
     controller: "MainController"
   })
   .state('hours', {

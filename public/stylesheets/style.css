@@ -27,10 +27,6 @@ body {
     background: none;
     color: #6faaf3; }
 
-#map {
-  height: 50vh;
-  margin: 30px; }
-
 .jumbotron {
   height: 35vh; }
 
@@ -47,8 +43,10 @@ body {
 .anchorLinkMap button {
   margin-bottom: 20px; }
 
-.mainFooter {
-  overflow: hidden; }
+.mainFooter, .footerP {
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
 
 .caption {
   background: #222222;
@@ -83,3 +81,34 @@ body {
 
 .hero-feature .homeP {
   font-size: 1.4em; }
+
+.showServiceDiv img {
+  height: 300px; }
+
+.showServiceRow {
+  padding-top: 40px; }
+
+.contactH {
+  color: white;
+  display: block; }
+
+.emailInput {
+  width: 220px; }
+
+.emailButton {
+  display: block;
+  margin: 0 auto; }
+
+input.ng-invalid, textarea.ng-invalid {
+  border: none;
+  box-shadow: 0px 0px 10px red; }
+
+input.ng-valid, textarea.ng-valid {
+  border: none;
+  box-shadow: 0px 0px 10px green; }
+
+.formInvalid {
+  color: red; }
+
+.formValid {
+  color: green; }

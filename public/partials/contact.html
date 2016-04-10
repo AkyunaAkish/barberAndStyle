@@ -1,1 +1,45 @@
-<h1>Contact</h1>
+<!-- <h1>Contact</h1> -->
+
+<div class="container">
+  <div class="row row-centered text-center">
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hero-feature">
+      <div class="thumbnail showServiceDiv">
+        <div class="caption">
+          <h1 class="contactH"> Please call to book an appointment with us</h1>
+          <h2 class="contactH">Phone Number: <br> 702-262-6466</h2>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hero-feature">
+      <div class="thumbnail showServiceDiv">
+        <div class="caption">
+          <h1 class="contactH">For all other inquiries feel free to send us a message</h1>
+          <h1 ng-if="form.$invalid" class="formInvalid">Please fill out the form</h1>
+          <h1 ng-if="form.$valid" class="formValid">Please submit your message</h1>
+
+          <form name="form" novalidate>
+
+            <label class="contactH">Your email address:</label>
+            <input class="emailInput" type="email" ng-model="emailAddress" placeholder="Your email address" required>
+
+            <label class="contactH">Message subject:</label>
+            <input class="emailInput" type="text" ng-model="emailSubject" placeholder="Email subject" required>
+
+            <label class="contactH">Message:</label>
+            <textarea rows="8" cols="40" ng-model="emailMessage" placeholder="Message" required></textarea>
+
+            <button class="emailButton btn btn-primary" ng-disabled="form.$invalid" ng-click="">Submit Message</button>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
