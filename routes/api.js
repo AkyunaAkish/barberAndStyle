@@ -18,7 +18,7 @@ router.post('/send_email', function(req,res,next){
   // setup e-mail data with unicode symbols
   var mailOptions = {
     from: req.body.senderEmail, // sender address
-    to: 'akyunaakish@gmail.com', // list of receivers
+    to: process.env.EMAIL, // list of receivers
     subject: "From: " + req.body.senderName + ": \n" + req.body.emailSubject, // Subject line
     text: req.body.emailMessage, // plaintext body
   };
@@ -33,7 +33,7 @@ router.post('/send_email', function(req,res,next){
       res.json('Message sent: ' + info.response);
     }
   });
-  
+
 });
 
 module.exports = router;
