@@ -115,8 +115,3 @@ input.ng-valid, textarea.ng-valid {
 
 .navbar {
   border: none; }
-
-.homeCaption {
-  background: white !important; }
-  .homeCaption p, .homeCaption h3 {
-    color: black; }
