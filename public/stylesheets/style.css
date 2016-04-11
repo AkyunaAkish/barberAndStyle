@@ -11,7 +11,7 @@ body {
 .social_anchor {
   display: block; }
   .social_anchor:visited {
-    color: #417db4; }
+    color: #6dbfe6; }
 
 .facebook {
   font-size: 2em; }
@@ -49,7 +49,7 @@ body {
   padding: 0; }
 
 .caption {
-  background: #222222;
+  background: #343434;
   border-radius: 1%; }
   .caption p {
     font-size: 1.2em;
@@ -69,7 +69,7 @@ body {
   font-weight: bolder; }
 
 .homeColumn {
-  background: #222222;
+  background: #343434;
   color: white; }
   .homeColumn .homeH1 {
     margin: 0;
@@ -112,3 +112,11 @@ input.ng-valid, textarea.ng-valid {
 
 .formValid {
   color: green; }
+
+.navbar {
+  border: none; }
+
+.homeCaption {
+  background: white !important; }
+  .homeCaption p, .homeCaption h3 {
+    color: black; }
