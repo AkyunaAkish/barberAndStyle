@@ -3,7 +3,7 @@ var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
 
-router.post('/test', function(req,res,next){
+router.post('/sendEmail', function(req,res,next){
   res.status(200).json(req.body);
 });
 
