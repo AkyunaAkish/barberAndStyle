@@ -4,7 +4,7 @@ var router = express.Router();
 var nodemailer = require('nodemailer');
 
 router.post('/test', function(req,res,next){
-  res.status(200).json({test:'Test'});
+  res.status(200).json(req.body);
 });
 
 
