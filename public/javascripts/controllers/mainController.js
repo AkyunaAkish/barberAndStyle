@@ -1,5 +1,11 @@
 app.controller('MainController', function($scope, $http){
 
+  $scope.test = function(){
+    $http.post('/api/v1/test', {something: 'Hi'}).then(function(res){
+      console.log(res.data);
+    });
+  }
+
   $scope.sendEmail = function() {
     var messageObj = {};
     messageObj.senderEmail = $scope.emailAddress;

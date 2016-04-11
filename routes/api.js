@@ -3,9 +3,15 @@ var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
 
+router.post('/test', function(req,res,next){
+  res.status(200).json({test:'Test'});
+});
+
 
 router.post('/send_email', function(req,res,next){
-  res.json('req.body from server ', req.body);
+
+  res.status(200).json(req.body)
+
   // create reusable transporter object using the default SMTP transport
   // var transporter = nodemailer.createTransport({
   //   service: 'AOL',
